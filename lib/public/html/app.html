@@ -16,14 +16,29 @@
     <!-- Load in scripts for Tone (WAA) and jQuery -->
     <script src="https://tonejs.github.io/build/Tone.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <div id="title">
         <h1> Music Technology Project: Prototype mappings survey. </h1>
     </div>
     <div align="center">
       <canvas id="synthCanvas" width="800" height="800"></canvas>
-      <script src="/js/canvas.js"></script>
+    </div>
+    <div><p> </p></div>
+    <div id="mappingDescription" align="center"></div>
+    <div align="center">
+      <select id="mappingChanger">
+          <option value="1" selected="selected">Mapping One</option>
+          <option value="2">Mapping Two</option>
+          <option value="3">Mapping Three</option>
+          <option value="4">Mapping Four</option>
+      </select>
+      <button id="playButton"> Play </button>
+      <button id="resetButton"> Reset </button>
+      <button id="submitButton"> Submit </button>
     </div>
     <script src="/js/synth.js"></script>
+    <script src="/js/canvas.js"></script>
+    <script src="/js/misc.js"></script>
   </body>
 
 </html>
