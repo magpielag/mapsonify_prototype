@@ -1,36 +1,29 @@
 {
   "name": "mapsonify-prototype",
-  "version": "1.0.0",
-  "description": "Prototype project used to test sonification mappings based on route positions.",
+  "version": "0.0.0",
+  "description": "MT project prototype",
   "main": "lib/server.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lib/node server.js"
-  },
-  "keywords": [
-    "example",
-    "heroku"
-  ],
   "dependencies": {
     "express": "^4.16.4",
     "jquery": "^3.3.1",
     "tone": "^0.12.80",
   },
+  "devDependencies": {
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "tone": "^0.12.80",
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lib/node server.js"
+  },
+  "author": "Tom Shanahan",
+  "license": "LBU",
   "engines": {
-    "node": "10.15.0",
-    "npm": "6.4.1"
+    "node": "10.x"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/magpielag/mapsonify_prototype.git"
-  },
-  "author": "Thomas Shanahan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/magpielag/mapsonify_prototype/issues"
-  },
-  "homepage": "https://github.com/magpielag/mapsonify_prototype#readme"
+    "url": "git@heroku.com:mapsonify-project.git"
+  }
 }
