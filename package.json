@@ -7,7 +7,8 @@
     "express": "^4.16.4",
     "jquery": "^3.3.1",
     "redis": "^2.8.0",
-    "tone": "^0.12.80"
+    "tone": "^0.12.80",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "express": "^4.16.4",
