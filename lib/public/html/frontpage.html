@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title> MTP Project </title>
+  <meta charset="utf-8">
+  <style>
+    h1 {
+      text-align: center; font-family: Helvetica, serif; font-size: 35px;
+    }
+    h3 {
+      text-align: center; font-family: Helvetica, serif; font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="titleHeader" align="center">
+    <h1> Music Technology Project: Mapping survey for sonification application.
+    </h1>
+  </div>
+  <div align="center">
+    <div id="informationArea" align="left">
+    <p> Welcome to this mapping test application for my music technology project.
+      The purpose of this site is to aquire information regarding the spatialisation
+      of sound under four different data to audio mappings. In short; four different ways
+      of transfering (x, y) information into audio output.
+    </div>
+    <br>
+    </br>
+    <h3> Outline: </h3>
+    <p>On the proceeding page is a canvas object that will generate sound when
+    you <b>click and drag</b> within it.</p>
+    <p> The sound generated will depend upon the selected mapping, which can be changed using
+      the <select><option value="1"> Mapping</option></select> dropdown. </p>
+    <p> Your goal is to listen to the sound produced by clicking the <button> Play </button>,
+      then approximate the path used to generate that sound. </p>
+      <p><b>For example: </b> A straight
+    line from left to right on a spatialisation mapping (2) will produce a steady frequency panning
+  from left to right. </p>
+  <p> Once you have identified and drawn the path produced within the audio playback, use the
+    <button> Submit </button> to submit your approximation. </p>
+    <p> Please try to submit as many paths as you can on as many mappings as possible, although
+      any usage or feedback is appreciated. </p>
+    <p> When you are ready to begin, tick the box below and press continue. </p>
+  </div>
+ <br>
+ </br>
+  <div>
+      <script type="text/javascript">
+
+    function checkForm(form)
+    {
+      if(!form.terms.checked) {
+        form.terms.focus();
+        return false;
+      }
+      window.open(window.location + '/app')
+  }
+    </script>
+    <form onsubmit="return checkForm(this);">
+    <p align="center"><input type="checkbox" required="" name="terms"> I accept for my performance data to be collected for this university project.</p>
+    <p align="center"><input type="submit" value="Continue" id="subBtn"></p>
+    </form>
+  </div>
+
+</body>
